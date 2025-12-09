@@ -9,7 +9,7 @@ app = FastAPI(
     version="1.0"
 )
 
-MODEL_PATH = "../models/svm_model.pkl"
+MODEL_PATH = "svm_model.pkl"
 model = joblib.load(MODEL_PATH)
 
 class Patient(BaseModel):
